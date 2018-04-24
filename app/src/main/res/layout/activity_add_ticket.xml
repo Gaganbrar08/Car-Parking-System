@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.macstudent.carparkingsystem.AddTicketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/01/2019"
+            android:textSize="16dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" $10"
+            android:textSize="32dp"
+            android:textColor="#32CD32"
+           />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/txtImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtVehicleNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter Vehicle No"
+        android:inputType="textPersonName"
+        android:text="" />
+    <EditText
+        android:id="@+id/edtVehicleBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter Brand"/>
+
+    <Spinner
+        android:id="@+id/spinnerColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/color_arrays"
+        android:prompt="@string/color_prompt"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtTiming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:id="@+id/rgTiming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="1/2 Hr." />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 Hr." />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2 Hr." />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3 Hr." />
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Day Ends" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerLane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lane_arrays"
+        android:prompt="@string/lane_prompt"
+        android:layout_weight="1" />
+
+    <Spinner
+        android:id="@+id/spinnerPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/position_arrays"
+        android:prompt="@string/position_prompt"
+        android:layout_weight="1" />
+    <Spinner
+        android:id="@+id/spinnerPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/payment_arrays"
+        android:prompt="@string/payment_prompt"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnAddTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Save" />
+
+</LinearLayout>
